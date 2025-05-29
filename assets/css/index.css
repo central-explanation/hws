@@ -1,0 +1,210 @@
+* {
+  user-select: none;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  width: 100%;
+}
+.page-box {
+  width: 100%;
+  max-width: 750px;
+  margin: 0 auto;
+  position: relative;
+}
+.page-img {
+  width: 100%;
+  position: relative;
+}
+
+.page-img .body-logo {
+  position: absolute;
+  left: 0.45rem;
+  top: 0.38rem;
+}
+.page-img .body-logo img {
+  height: 1.1rem;
+  width: 1.1rem;
+  z-index: 9;
+  object-fit: cover;
+}
+
+.page-bottom .footer-logo img {
+  height: 1.2rem;
+  width: 1.2rem;
+  z-index: 9;
+  object-fit: cover;
+}
+
+.page-bottom .footer-logo {
+  position: absolute;
+  bottom: 0.60rem;
+  left: 1.25rem;
+  z-index: 9;
+}
+
+.page-img img {
+  width: 100%;
+  display: block;
+}
+
+.page-padding {
+  height: 9.8%;
+}
+.page-bottom {
+  width: 100%;
+  max-width: 750px;
+  position: fixed;
+  bottom: 0px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+.page-bottom img {
+  width: 100%;
+  display: block;
+}
+.page-bottom .webs {
+  position: absolute;
+  left: 44%;
+  color: #ffffff;
+  top: 50%;
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.page-bottom .webs .webtxt {
+  color: #fff000;
+  font-style: normal;
+}
+
+.downMain {
+  display: flex;
+  justify-content: center;
+}
+
+.downImg {
+  position: absolute;
+  top: 10%;
+  max-width: 400px;
+  height: auto;
+  /* display: none !important; */
+  animation: myfirst 1s infinite;
+}
+
+.container {
+  width: 80%;
+  position: absolute;
+  left: 1rem;
+  top: 10rem;
+}
+
+.container .download {
+  width: 100%;
+  text-align: center;
+  padding: 0.2rem 0;
+}
+.container .download .buttonMain {
+  width: 5rem;
+  height: 2rem;
+  background: url(../img/download.html) center no-repeat;
+  background-size: 5rem 2rem;
+  -webkit-animation: myfirst 1s infinite;
+  animation: myfirst 1s infinite;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+@-webkit-keyframes myfirst {
+  from {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(0.8);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes myfirst {
+  from {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(0.8);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+.kf {
+  position: fixed;
+  bottom: 2rem;
+  right: 0.2rem;
+  animation: kf 2s infinite;
+}
+.kf img {
+  width: 1rem;
+}
+
+@keyframes kf {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.qr-container {
+  z-index: 99;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.qr-box {
+  padding: 30px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 10px;
+  font-size: 24px;
+  width: 300px;
+  height: auto;
+  margin: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
